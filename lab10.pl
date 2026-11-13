@@ -19,7 +19,7 @@ login :-
     login_attempts(3).
 
 login_attempts(0) :-
-    write('Sorry, you used all your available attempts, try again later.').
+    write('Sorry, you exceeded the maximum number of attempts, try again later.').
 
 login_attempts(N) :-
     N > 0,
